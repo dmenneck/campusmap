@@ -120,7 +120,7 @@ const layersGroup = new OlLayerGroup({
 
 const center = [771105.02, 6608382.01]; //Cologne
 
-// create a new instance of ol.map in ES6 syntax
+// create a new instance of OlMap in ES6 syntax
 const map = new OlMap({
   controls: defaultControls().extend([new FullScreen()]),
   view: new OlView({
