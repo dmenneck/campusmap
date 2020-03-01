@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  color: #15222b;
+  font-size: 16px;
+}
+
+/* --- Navigation --- */
+#globalnav {
+  height: 68px;
+  background: #fff;
+  box-shadow: 0 1px 0 0 #e0e0e0;
+  position: relative;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 0.5px solid #354d60;
+}
+
+#globalnav > a {
+  color: black;
+  float: right;
+  text-decoration: none;
+  padding: 22px 14px 19px 10px;
+  font-size: 17px;
+}
+
+#gnavLogo {
+  display: inline;
+  position: absolute;
+  top: 14px;
+  left: 1%;
+}
+
+#Unikoelnlogo {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  background-color: white;
+  left: 100%;
+  top: 0px;
+  bottom: 0px;
+  padding-left: 10px;
+  border-left: 1px solid #354d60;
+}
+
+#gnavLogo a {
+  color: #354d60;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+#gnavLogo a span {
+  color: #354d60;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#globalnav > a:hover {
+  background-color: lightgrey;
+}
+
+.überschrift {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 32px;
+}
+
+.description {
+  margin: 0 auto 2.5% auto;
+  width: 80%;
+  text-align: center;
+  font-size: 25px;
+}
+
+#container-table {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+#container-form {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+#searchInput {
+  margin-bottom: 10px;
+}
+
+.tr-hover:hover {
+  background-color: #deecf7;
+}
+
+#logoSchriftzug {
+  width: 90%;
+  padding: 10px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
+#gridHalf {
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+. {
+  margin-bottom: 8%;
+}
+
+.relative {
+  position: relative;
+}
+
+.one-third {
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.two-thirds {
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.absolute {
+  position: absolute;
+  right: 20px;
+  top: 35%;
+}
+
+#infoLageplanBtn {
+  font-size: 12px;
+  margin: 15px;
+}
+
+#cgnMap {
+  width: 100%;
+  height: auto;
+  margin: 20px auto 0 auto;
+}
+
+li {
+  padding: 10px;
+}
+
+li:hover {
+  background-color: #d6e9f8;
+}
+
+#inputSearch {
+  width: 237px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+#geoText {
+  margin-bottom: 200px;
+}
+
+/* --- social media btns --- */
+#socialMediaBtn {
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+  width: 120px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+#socialMediaBtn:hover {
+  color: #354d60;
+}
+
+#uniKoelnLink,
+#geoInstitutLink,
+#gebauelisteLink {
+  color: black;
+}
+
+/* --- display data  --- */
+#displayData {
+  color: black;
+  z-index: 1;
+  border: 1px solid #354d60;
+  position: fixed;
+  bottom: 2.5vh;
+  left: 1vw;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+#rowOne {
+  border-bottom: 1px solid grey;
+  padding: 0;
+  opacity: 0.5;
+}
+
+#rowTwo {
+  margin-top: 10px;
+}
+
+.rowDisplayData {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.rowDisplayData p {
+  color: #354d60;
+  margin: 0;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.rowDisplayData p:nth-child(2) {
+  padding-right: 20px;
+}
+
+.geoHeading {
+  padding: 0 0 40px 0;
+}
+
+.hideNavbarBtn button {
+  position: absolute;
+  top: 66px;
+  right: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  color: #354d60;
+  width: 10px;
+  height: 10px;
+}
+
+#mobileNav {
+  display: none;
+}
+
+#gridLayerLegende {
+  position: absolute;
+  bottom: 150px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  padding: 8px;
+  border: 1px solid black;
+  width: 200px;
+  background-color: white;
+  opacity: 90%;
+}
+
+.transparencyVector {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#blue {
+  background-color: #354d60;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+#red {
+  background-color: #5493c4;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.LayerLegendeText {
+  color: black;
+}
+
+#ContainerEbenen {
+  z-index: 1;
+  scale: 100px;
+}
+
+.EbenenBtn {
+  margin: 10px 10px 2px 0px;
+}
+
+#MobileNav {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+
+#MobileNav button {
+  top: 9px;
+  right: 10px;
+}
+
+#mobileNavFullWidth {
+  background-color: #354d60;
+  margin-top: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#NavBarBlocker {
+  width: 100vw;
+  background-color: white;
+  height: 56px;
+  border-bottom: 1px solid grey;
+}
+
+#MobileNavNavLinks {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  display: block;
+}
+
+#MobileNavNavLinks span {
+  display: block;
+  margin: 60px 0 0 10px;
+}
+
+.gridFullWidth {
+  grid-column: 1/3;
+  position: center;
+  margin: 2px;
+  margin-left: 6px;
+  font-size: 12px;
+  color: white;
+}
+
+.LayerOnOff {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+}
+
+#info {
+  z-index: 1;
+  border: 2px solid grey;
+  position: fixed;
+  bottom: 2.5vh;
+  left: 1vw;
+  padding: 10px;
+  background-color: #354d60;
+  opacity: 0.9;
+}
+
+#exampleMessage {
+  width: 80vw;
+  height: 20vh;
+}
+
+#GEBNR {
+  position: absolute;
+  z-index: 2;
+  font-size: 26px;
+  bottom: 0px;
+  padding: 40px;
+}
+
+#name {
+  position: absolute;
+  z-index: 2;
+  font-size: 26px;
+  bottom: 30px;
+  padding: 40px;
+}
+
+.layerVisibilityBtn {
+  display: block;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: white !important;
+  border: 1px solid grey !important;
+}
+
+#options {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  top: 45%;
+}
+
+#menuBtn {
+  display: block;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #354d60 !important;
+  margin-bottom: 5px;
+}
+
+#zoomToExtBtn {
+  display: block;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #354d60 !important;
+  margin-bottom: 5px;
+}
+
+#getlocationbtn {
+  display: block;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #354d60 !important;
+}
+
+#searchbtn {
+  position: absolute;
+  z-index: 1;
+  top: 66vh;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-color: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  border-radius: 4px;
+}
+
+#search {
+  width: 26px;
+  height: auto;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+#searchBar {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  opacity: 95%;
+  position: absolute;
+  z-index: 1;
+  bottom: 82vh;
+  left: 40vw;
+}
+
+#getSearchBar {
+  position: absolute;
+  z-index: 1;
+  top: 67vh;
+  left: 10px;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+}
+
+.ant-drawer-title {
+  font-size: 22px !important;
+}
+
+#getSearchBarInDrawer {
+  background-color: white;
+  height: 60px;
+  width: 60px;
+}
+
+#measureBtnInDrawer {
+  margin: 10px 10px 10px 0px;
+  display: inline;
+}
+
+#measureBtnReactGeo {
+  background-color: white !important;
+  width: 50px;
+  color: white !important;
+  border: none !important;
+}
+
+#ruler {
+  width: 30px;
+  height: auto;
+  z-index: 1;
+  opacity: 100;
+}
+
+.ol-control button {
+  background-color: #354d60 !important;
+  color: white !important;
+}
+
+#LegendeLayerAccordion {
+  position: absolute;
+  z-index: 1;
+  right: 5vw;
+  top: 10vh;
+  border: 1px solid #354d60;
+}
+
+.underline {
+  font-size: 18px;
+  padding: 4px;
+  font-weight: bold;
+  background-color: #edeff1;
+}
+
+#containerHintergrund {
+  border-bottom: 1px solid black;
+}
+
+#controlFunctions {
+  margin: 10px 0 10px 0;
+  padding: 5px 5px 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+#containerEbenen {
+  margin: 10px 0 10px 0;
+  padding: 5px 5px 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+#hintergrundBtnOne {
+  margin: 10px 10px 10px 0px;
+}
+
+#hintergrundBtnTwo {
+  margin: 10px;
+  margin-left: 50px;
+}
+
+#containerLayerGrid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+}
+
+#containerLayerPointsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr;
+}
+
+.pointsGridCol {
+  display: inline;
+  padding-right: 5px;
+}
+
+.pointsGridRow {
+  margin-bottom: 10px;
+}
+
+.layerVisibilityBtn {
+  width: auto;
+  height: 20px;
+}
+
+.btn-link {
+  color: black !important;
+  font-size: 18px !important;
+}
+
+#layerpng {
+  width: 30px;
+  height: auto;
+}
+
+#LegendeLayerHeader {
+  width: 100%;
+}
+
+#SearchForm {
+  position: absolute;
+  z-index: 1;
+}
+
+#clickOutsideHide {
+  display: none;
+}
+
+.form {
+  width: 25%;
+  position: absolute;
+  z-index: 1;
+  height: 60px;
+  overflow: hidden;
+  left: 8%;
+  top: 10%;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -1%;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid black;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: black;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+/* --- Media Queries --- */
+@media (max-width: 1200px) {
+  #globalnav > a {
+    display: none;
+  }
+  #container-table {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+  .bm-burger-button {
+    display: block;
+  }
+
+  #displayData {
+    z-index: 1;
+    border: 2px solid grey;
+    position: fixed;
+    bottom: 0vh;
+    left: 0vw;
+    padding: 5px;
+    background-color: #white;
+    opacity: 0.9;
+  }
+
+  #mobileNav {
+    display: block;
+    position: absolute;
+    right: 0.1em;
+    top: 0.8em;
+  }
+
+  #MobileNav {
+    display: block;
+  }
+
+  #gridLayerLegende {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  #cgnMap {
+    margin-top: 80px;
+  }
+}

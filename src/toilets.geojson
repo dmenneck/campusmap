@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "toilets",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "Point", "coordinates": [ 771972.689613449503668, 6608481.560052257031202 ] } },
+{ "type": "Feature", "properties": { "id": 2 }, "geometry": { "type": "Point", "coordinates": [ 772114.213667842792347, 6608478.975138020701706 ] } },
+{ "type": "Feature", "properties": { "id": 3 }, "geometry": { "type": "Point", "coordinates": [ 772123.2608676670352, 6608407.24376798607409 ] } },
+{ "type": "Feature", "properties": { "id": 4 }, "geometry": { "type": "Point", "coordinates": [ 772156.218524169642478, 6608491.253480639308691 ] } },
+{ "type": "Feature", "properties": { "id": 5 }, "geometry": { "type": "Point", "coordinates": [ 772182.713895083405077, 6608503.531823257915676 ] } },
+{ "type": "Feature", "properties": { "id": 6 }, "geometry": { "type": "Point", "coordinates": [ 772109.043839371879585, 6608410.474910780787468 ] } },
+{ "type": "Feature", "properties": { "id": 7 }, "geometry": { "type": "Point", "coordinates": [ 771807.901330936816521, 6608312.894398390315473 ] } },
+{ "type": "Feature", "properties": { "id": 8 }, "geometry": { "type": "Point", "coordinates": [ 771855.076015734579414, 6608277.998056211508811 ] } }
+]
+}
