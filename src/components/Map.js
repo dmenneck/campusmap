@@ -1,4 +1,4 @@
-// just some text
+// just some more text
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import * as PropTypes from "prop-types";
